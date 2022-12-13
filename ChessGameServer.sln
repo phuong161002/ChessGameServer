@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessGameServer", "ChessGameServer\ChessGameServer.csproj", "{4CFAB46B-B13A-4526-8D32-62E0BAB50A1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameDatabase", "GameDatabase\GameDatabase.csproj", "{97070554-2C74-4B4C-BDC5-E5442694D01F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CFAB46B-B13A-4526-8D32-62E0BAB50A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CFAB46B-B13A-4526-8D32-62E0BAB50A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CFAB46B-B13A-4526-8D32-62E0BAB50A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CFAB46B-B13A-4526-8D32-62E0BAB50A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97070554-2C74-4B4C-BDC5-E5442694D01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97070554-2C74-4B4C-BDC5-E5442694D01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97070554-2C74-4B4C-BDC5-E5442694D01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97070554-2C74-4B4C-BDC5-E5442694D01F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
