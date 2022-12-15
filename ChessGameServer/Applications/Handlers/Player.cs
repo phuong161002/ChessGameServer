@@ -76,6 +76,10 @@ namespace ChessGameServer.Applications.Handlers
         {
             if (Room != null)
             {
+                if (Room is PlayRoom)
+                {
+                    PlayerExitPlayRoom();
+                }
                 Room.ExitRoom(this);
             }
 
@@ -150,13 +154,11 @@ namespace ChessGameServer.Applications.Handlers
                         {
                             playRoom.State = PlayRoomState.Restarting;
                         }
-
                         break;
                     case WsTags.ExitRoom:
                         if (Room is PlayRoom)
                         {
                             PlayerExitPlayRoom();
-                           
                         }
                         break;
                     default:
@@ -203,6 +205,7 @@ namespace ChessGameServer.Applications.Handlers
                 }
             }
 
+            UserInfo = null;
             var invalidMsg = new WsMessage<string>(WsTags.Invalid, "Username or Password is Invalid");
             this.SendMessage(invalidMsg);
         }

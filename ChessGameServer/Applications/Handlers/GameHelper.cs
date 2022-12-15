@@ -26,7 +26,7 @@ namespace ChessGameServer.Applications.Handlers
 
         public static string HashPassword(string txt)
         {
-            var crypt = new SHA256Managed();
+            var crypt = SHA256Managed.Create();
             var hash = string.Empty;
             var bytes = crypt.ComputeHash(Encoding.UTF8.GetBytes(txt));
             return bytes.Aggregate(hash, (current, theByte) => current + theByte.ToString("x2"));
