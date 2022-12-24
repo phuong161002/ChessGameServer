@@ -69,6 +69,7 @@ namespace ChessGameServer.Applications.Handlers
 
         public bool SendMessage(string msg)
         {
+            Console.WriteLine("Send msg " + msg);
             return this.SendTextAsync(msg);
         }
 
@@ -92,6 +93,7 @@ namespace ChessGameServer.Applications.Handlers
             try
             {
                 var wsMes = GameHelper.ParseStruct<WsMessage<object>>(msg);
+                Console.WriteLine(msg);
                 switch (wsMes.Tags)
                 {
                     case WsTags.Invalid:
